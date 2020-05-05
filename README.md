@@ -2,6 +2,8 @@
 
 Provides a docker image which starts a [graphhopper](https://github.com/graphhopper/graphhopper/tree/0.13) server which is configured for calculating bike routes in cologne.
 
+**The container takes between 850mb and 1gb of memory.**
+
 ## usage
 java -Xms1g -Xmx1g-jar graphhopper.jar server config-example.yml
 
