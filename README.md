@@ -1,6 +1,7 @@
 # graphhopper docker image cologne
 
-Provides a docker image which starts a [graphhopper](https://github.com/graphhopper/graphhopper/tree/0.13) server which is configured for calculating bike routes in cologne.
+Provides a docker image which starts a [graphhopper](https://github.com/graphhopper/graphhopper/tree/0.13) server which is configured for calculating bike routes in cologne. You can find the build image on [Dockerhub](https://hub.docker.com/repository/docker/crowdsalat/graphhopper-cologne-bike)
+
 
 - The image uses the version [0.13 of graphhopper](https://graphhopper.com/public/releases/graphhopper-web-0.13.0.jar)
 - The map data is downloaded from [Geofabrik](https://download.geofabrik.de/europe/germany/nordrhein-westfalen/koeln-regbez.html)
@@ -11,10 +12,6 @@ Provides a docker image which starts a [graphhopper](https://github.com/graphhop
 
 ## usage
 
-```shell
-# build 
-docker build . -t crowdsalat/graphhopper-cologne:latest
+You can run the image with `docker run -d -p 8989:8989 --name graphhopper-cologne crowdsalat/graphhopper-cologne-bike`
 
-# run 
-docker run -d -p 8989:8989 --name graphhopper-cologne crowdsalat/graphhopper-cologne
-```
+To create a new version of the image you just need to tag a git version. When you create a git tag the new image is build on docker hub. One with the docker tag latest and on with the docker tag which corresponds to the the git tag. For local build run: `docker build . -t crowdsalat/graphhopper-cologne-bike`
