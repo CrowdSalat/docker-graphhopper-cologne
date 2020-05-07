@@ -3,6 +3,8 @@
 # graph.flag_encoders: car -> bike
 # graph.bytes_for_flags: 4 -> 8
 # datareader.file: some.pbf -> /data/koeln-regbez-latest.osm.pbf
+# server applicationConnectors bindHost: localhost -> 0.0.0.0
+# server adminConnectors bindHost: localhost -> 0.0.0.0
 
 graphhopper:
 
@@ -156,13 +158,13 @@ server:
   - type: http
     port: 8989
     # for security reasons bind to localhost
-    bindHost: localhost
+    bindHost: 0.0.0.0
   requestLog:
       appenders: []
   adminConnectors:
   - type: http
     port: 8990
-    bindHost: localhost
+    bindHost: 0.0.0.0
 # See https://www.dropwizard.io/1.3.8/docs/manual/configuration.html#logging
 logging:
   appenders:
