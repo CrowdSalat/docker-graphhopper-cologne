@@ -13,4 +13,4 @@ ADD https://download.geofabrik.de/europe/germany/nordrhein-westfalen/koeln-regbe
 
 EXPOSE 8989
 
-ENTRYPOINT [ "java", "-Xms50m", "-Xmx1g", "-jar", "graphhopper.jar", "server", "config-example.yml"]
+ENTRYPOINT [ "java", "-Xms250m", "-Xmx1g", "-jar", "graphhopper.jar", "server", "config-example.yml"]
