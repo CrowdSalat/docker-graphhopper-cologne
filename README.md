@@ -12,6 +12,6 @@ Provides a docker image which starts a [graphhopper](https://github.com/graphhop
 
 ## usage
 
-You can run the image with `docker run -d -p 8989:8989 --name graphhopper-cologne crowdsalat/graphhopper-cologne-bike`
+You can run the image with `docker run -d -p 8989:8989 --name graphhopper-cologne-bike crowdsalat/graphhopper-cologne-bike`
 
 To create a new version of the image you just need to tag a git version. When you create a git tag the new image is build on docker hub. One with the docker tag latest and on with the docker tag which corresponds to the the git tag. For local build run: `docker build . -t crowdsalat/graphhopper-cologne-bike`
