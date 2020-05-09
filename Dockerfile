@@ -12,5 +12,6 @@ ADD https://graphhopper.com/public/releases/graphhopper-web-0.13.0.jar ./graphho
 ADD https://download.geofabrik.de/europe/germany/nordrhein-westfalen/koeln-regbez-latest.osm.pbf ./koeln-regbez-latest.osm.pbf
 
 EXPOSE 8989
+VOLUME [ "/data" ]
 
 ENTRYPOINT [ "java", "-Xms250m", "-Xmx1g", "-jar", "graphhopper.jar", "server", "config-example.yml"]

@@ -9,7 +9,7 @@
 graphhopper:
 
   # OpenStreetMap input file
-  datareader.file: ./koeln-regbez-latest.osm.pbf
+  datareader.file: /data/koeln-regbez-latest.osm.pbf
 
   ##### Vehicles #####
 
