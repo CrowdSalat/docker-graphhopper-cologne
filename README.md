@@ -1,6 +1,6 @@
 # graphhopper docker image cologne
 
-Provides a docker image which starts a [graphhopper](https://github.com/graphhopper/graphhopper/tree/0.13) server which is configured for calculating bike routes in cologne. You can find the build image on [Dockerhub](https://hub.docker.com/repository/docker/crowdsalat/graphhopper-cologne-bike)
+Provides a docker image which starts a [graphhopper](https://github.com/graphhopper/graphhopper/tree/0.13) server which is configured for calculating bike routes in cologne. You can find the build image on [Dockerhub](https://hub.docker.com/repository/docker/crowdsalat/graphhopper-cologne-bike). An overview of the API of Graphhopper can be found [here](https://github.com/graphhopper/graphhopper/blob/0.13/docs/web/api-doc.md).
 
 
 - The image uses the version [0.13 of graphhopper](https://graphhopper.com/public/releases/graphhopper-web-0.13.0.jar)
