@@ -1,14 +1,12 @@
 # graphhopper docker image cologne
 
-Provides a docker image which starts a [graphhopper](https://github.com/graphhopper/graphhopper/tree/0.13) server which is configured for calculating bike routes in cologne. You can find the build image on [Dockerhub](https://hub.docker.com/repository/docker/crowdsalat/graphhopper-cologne-bike). An overview of the API of Graphhopper can be found [here](https://github.com/graphhopper/graphhopper/blob/0.13/docs/web/api-doc.md).
+Provides a docker image which starts a [graphhopper](https://github.com/graphhopper/graphhopper/tree/0.13) server which is configured for calculating bike routes in cologne. You can find the build image on [Dockerhub](https://hub.docker.com/repository/docker/crowdsalat/graphhopper-cologne-bike). An overview of the API of Graphhopper can be found [here](https://github.com/graphhopper/graphhopper/blob/5.1/docs/web/api-doc.md).
 
-
-- The image uses the version [0.13 of graphhopper](https://graphhopper.com/public/releases/graphhopper-web-0.13.0.jar)
+- The base image can be found on [Dockerhub](https://hub.docker.com/r/israelhikingmap/graphhopper)
+- Dockerfile of base image on [Github](https://github.com/IsraelHikingMap/graphhopper-docker-image-push) 
 - The map data is downloaded from [Geofabrik](https://download.geofabrik.de/europe/germany/nordrhein-westfalen/koeln-regbez.html)
-- The config is downloaded from [official github repository](https://raw.githubusercontent.com/graphhopper/graphhopper/0.13/config-example.yml) and edited for usage with bike
-- The container takes between 850mb and 1gb of memory and takes around 86 seconds to startup. 
-
-**The official [docker image from graphhopper](https://hub.docker.com/r/graphhopper/graphhopper/) with tag 1.0-pre38 only takes around 22 seconds to startup.**
+- The config is downloaded from [official github repository](https://raw.githubusercontent.com/graphhopper/graphhopper/5.1/config-example.yml) and edited for usage with bike
+- The container takes between 850mb and 1gb of memory and takes around 35 seconds to startup. 
 
 ## usage
 
