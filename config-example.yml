@@ -5,6 +5,8 @@
 # datareader.file: ""-> /data/koeln-regbez-latest.osm.pbf
 # server applicationConnectors bindHost: localhost -> 0.0.0.0
 # server adminConnectors bindHost: localhost -> 0.0.0.0
+# profiles.name: car -> bike
+# profiles.vehicle: car -> bike
 
 graphhopper:
 
@@ -56,8 +58,8 @@ graphhopper:
   # To prevent long running routing queries you should usually enable either speed or hybrid mode for all the given
   # profiles (see below). Otherwise you should at least limit the number of `routing.max_visited_nodes`.
   profiles:
-    - name: car
-      vehicle: car
+    - name: bike
+      vehicle: bike
       weighting: fastest
 
   #  - name: car_with_turn_costs
@@ -74,7 +76,7 @@ graphhopper:
   # profiles with `turn_costs: true` a more elaborate preparation is required (longer preparation time and more memory
   # usage) and the routing will also be slower than with `turn_costs: false`.
   profiles_ch:
-    - profile: car
+    - profile: bike
   #   - profile: car_with_turn_costs
 
   # Hybrid mode:
@@ -156,8 +158,9 @@ graphhopper:
   ##### Storage #####
 
 
+# TODO TRY MMAP vllt weniger memory
   # configure the memory access, use RAM_STORE for well equipped servers (default and recommended)
-  graph.dataaccess.default_type: RAM_STORE
+  graph.dataaccess.default_type: NMAP
 
 
   # will write way names in the preferred language (language code as defined in ISO 639-1 or ISO 639-2):
