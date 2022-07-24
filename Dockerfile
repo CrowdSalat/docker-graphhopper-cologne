@@ -2,7 +2,7 @@ FROM israelhikingmap/graphhopper:5.1
 
 WORKDIR /graphhopper
 
-COPY config-example.yml bike-config-cologne.yml
+COPY bike-config-cologne.yml . 
 
 ADD https://download.geofabrik.de/europe/germany/nordrhein-westfalen/koeln-regbez-latest.osm.pbf /data/koeln-regbez-latest.osm.pbf
 
